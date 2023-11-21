@@ -1,12 +1,15 @@
 h1{
     background-color: white;
     width: 400px;
-    border: 2px solid brown;
+    border: 2px dotted brown;
     margin: 10px;
     margin: 10px;
     font-size: 2rem;
     color: brown;
+    position: relative;
+    left: 36%;
 }
+
 img{
     width: 10vw; 
 
@@ -19,6 +22,9 @@ h2{
 }
 h2:hover {
     color: brown;
+}
+h3 {
+    color: #9f9fc3 ;
 }
  
 
@@ -40,7 +46,7 @@ p{
     font-weight: 600;
 }
 body{
-    background-color: rgb(159, 159, 195);
+    background-color: #9f9fc3;
     text-align: center;
 }
 .foto{
@@ -60,4 +66,81 @@ footer {
         height: 22rem;
         
         background-color: black;
+    }
+    .card .dark{
+
+        background-color: #f1c40f;
+
+    }
+
+  
+    
+
+    body.dark {
+        background: #232c35;
+        color: #fff;
+   
+    }
+    body.dark h1 {
+        border: 2px dotted darkgreen;
+        color: darkgreen;
+   
+    }
+    body.dark h2 {
+        color: #111;
+   
+    }
+    body.dark h2:hover {
+        color: #f39c12;
+    }
+    body.dark .card {
+        background-color: #fff;
+    }
+    body.dark .foto {
+        margin: 0 0 50px 40px;
+        transform: scale(1.5);
+    }
+    
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+    
+    .label {
+        background-color: #111;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        left: 95%;
+        height: 15px;
+        width: 45px;
+        transform: scale(1.5);
+    }
+    
+    .label .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 20px;
+        width: 20px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+    
+    .checkbox:checked + .label .ball {
+        transform: translateX(31px);
+    }
+    
+    .fa-moon {
+        color: #f1c40f;
+    }
+    
+    .fa-sun {
+        color: #f39c12
     }
